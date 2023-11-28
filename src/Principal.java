@@ -4,11 +4,15 @@ public class Principal {
         meuFilme.nome = "O Poderoso Chefão";
         meuFilme.anoDeLancamento = 1970;
         meuFilme.duracaoMinutos = 189;
-        meuFilme.avaliacao = 9;
         meuFilme.inclusoNoPlano = true;
-        meuFilme.totalAvaliacoes = 5;
 
-        System.out.println(meuFilme.nome);
-        System.out.println(meuFilme.anoDeLancamento);
+        meuFilme.exibeFichaTecnica();
+        meuFilme.avalia(8);
+        meuFilme.avalia(5);
+        meuFilme.avalia(10);
+
+        System.out.println("Total de avaliações: " + meuFilme.getTotalAvaliacoes());
+
+        System.out.println(meuFilme.pegaMedia());
     }
 }
