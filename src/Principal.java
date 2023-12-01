@@ -22,6 +22,9 @@ public class Principal {
         serie.exibeFichaTecnica();
         serie.setTemporadas(10);
         serie.setEpisodioPorTemporada(10);
+        serie.setDuracaoEpisodio(50);
+
+        System.out.println("Duração para maratonar Lost: " + serie.getDuracaoEmMinutos() + " minutos");
 
     }
 
